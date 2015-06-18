@@ -15,6 +15,10 @@
 		17C937BC1B2B188E00D4641F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17C937BB1B2B188E00D4641F /* Images.xcassets */; };
 		17C937BF1B2B188E00D4641F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17C937BD1B2B188E00D4641F /* LaunchScreen.xib */; };
 		17C937CB1B2B188E00D4641F /* FontAwesomeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 17C937CA1B2B188E00D4641F /* FontAwesomeTests.m */; };
+		17E961341B32D15000254A72 /* NSString+FontAwesome.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E9612F1B32D15000254A72 /* NSString+FontAwesome.m */; };
+		17E961351B32D15000254A72 /* UIFont+FontAwesome.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E961311B32D15000254A72 /* UIFont+FontAwesome.m */; };
+		17E961361B32D15000254A72 /* UIImage+FontAwesome.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E961331B32D15000254A72 /* UIImage+FontAwesome.m */; };
+		17E961391B32D98700254A72 /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 17E961381B32D98700254A72 /* FontAwesome.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +46,13 @@
 		17C937C41B2B188E00D4641F /* FontAwesomeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FontAwesomeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		17C937C91B2B188E00D4641F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		17C937CA1B2B188E00D4641F /* FontAwesomeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FontAwesomeTests.m; sourceTree = "<group>"; };
+		17E9612E1B32D15000254A72 /* NSString+FontAwesome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+FontAwesome.h"; sourceTree = "<group>"; };
+		17E9612F1B32D15000254A72 /* NSString+FontAwesome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+FontAwesome.m"; sourceTree = "<group>"; };
+		17E961301B32D15000254A72 /* UIFont+FontAwesome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+FontAwesome.h"; sourceTree = "<group>"; };
+		17E961311B32D15000254A72 /* UIFont+FontAwesome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+FontAwesome.m"; sourceTree = "<group>"; };
+		17E961321B32D15000254A72 /* UIImage+FontAwesome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+FontAwesome.h"; sourceTree = "<group>"; };
+		17E961331B32D15000254A72 /* UIImage+FontAwesome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+FontAwesome.m"; sourceTree = "<group>"; };
+		17E961381B32D98700254A72 /* FontAwesome.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +94,7 @@
 		17C937AA1B2B188E00D4641F /* FontAwesome */ = {
 			isa = PBXGroup;
 			children = (
+				17E9612C1B32D15000254A72 /* Thirdparty */,
 				17C937AF1B2B188E00D4641F /* AppDelegate.h */,
 				17C937B01B2B188E00D4641F /* AppDelegate.m */,
 				17C937B51B2B188E00D4641F /* ViewController.h */,
@@ -120,6 +132,36 @@
 				17C937C91B2B188E00D4641F /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		17E9612C1B32D15000254A72 /* Thirdparty */ = {
+			isa = PBXGroup;
+			children = (
+				17E961371B32D98700254A72 /* Font */,
+				17E9612D1B32D15000254A72 /* Fontawesome */,
+			);
+			path = Thirdparty;
+			sourceTree = "<group>";
+		};
+		17E9612D1B32D15000254A72 /* Fontawesome */ = {
+			isa = PBXGroup;
+			children = (
+				17E9612E1B32D15000254A72 /* NSString+FontAwesome.h */,
+				17E9612F1B32D15000254A72 /* NSString+FontAwesome.m */,
+				17E961301B32D15000254A72 /* UIFont+FontAwesome.h */,
+				17E961311B32D15000254A72 /* UIFont+FontAwesome.m */,
+				17E961321B32D15000254A72 /* UIImage+FontAwesome.h */,
+				17E961331B32D15000254A72 /* UIImage+FontAwesome.m */,
+			);
+			path = Fontawesome;
+			sourceTree = "<group>";
+		};
+		17E961371B32D98700254A72 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				17E961381B32D98700254A72 /* FontAwesome.ttf */,
+			);
+			path = Font;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -205,6 +247,7 @@
 				17C937BA1B2B188E00D4641F /* Main.storyboard in Resources */,
 				17C937BF1B2B188E00D4641F /* LaunchScreen.xib in Resources */,
 				17C937BC1B2B188E00D4641F /* Images.xcassets in Resources */,
+				17E961391B32D98700254A72 /* FontAwesome.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -222,10 +265,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17E961341B32D15000254A72 /* NSString+FontAwesome.m in Sources */,
 				17C937B41B2B188E00D4641F /* FontAwesome.xcdatamodeld in Sources */,
 				17C937B11B2B188E00D4641F /* AppDelegate.m in Sources */,
 				17C937B71B2B188E00D4641F /* ViewController.m in Sources */,
 				17C937AE1B2B188E00D4641F /* main.m in Sources */,
+				17E961351B32D15000254A72 /* UIFont+FontAwesome.m in Sources */,
+				17E961361B32D15000254A72 /* UIImage+FontAwesome.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,6 +466,7 @@
 				17C937D01B2B188E00D4641F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		17C937D11B2B188E00D4641F /* Build configuration list for PBXNativeTarget "FontAwesomeTests" */ = {
 			isa = XCConfigurationList;
@@ -428,6 +475,7 @@
 				17C937D31B2B188E00D4641F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
